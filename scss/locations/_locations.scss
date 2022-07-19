@@ -1,0 +1,203 @@
+.locations__hero {
+  background-image: url("./assets/images/careers-location-hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+
+  @include tablet {
+    background-image: url("./assets/images/careers-locations-hero-tablet.jpg");
+    overflow-x: hidden;
+  }
+
+  @include desktop{
+    background-image: url("./assets/images/careers-locations-hero-desktop.jpg");
+  }
+
+  .container{
+    @include desktop{
+      padding: 0 10rem;
+      max-width: 1600px;
+      margin: auto;
+    }
+  }
+
+  &__headline {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3.75rem 0;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+}
+
+.hero__circles {
+  display: none;
+
+  @include tablet {
+    display: block;
+    top: 60px;
+    right: -30px;
+  }
+}
+
+.locations {
+  &__info__item {
+
+    @include tablet {
+      position: relative;
+      max-width: 572px;
+      width: 100%;
+      margin: 6rem auto;
+    }
+
+    @include desktop{
+      max-width: 1000px;
+    }
+
+    &__picture {
+      margin: 2rem 0;
+
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__city {
+      text-align: center;
+      gap: 1rem;
+      background-color: rgba(252, 183, 43, 0.15);
+      color: $dark-navy;
+      font-size: 1.5rem;
+      font-family: "Space Mono";
+      margin-bottom: 1rem;
+      padding: 1.375rem 6.25rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include tablet {
+            background-color: $yellow;
+            font-size: .8rem;
+            line-height: 28px;
+            padding: .25rem 2rem;
+            margin: 0;
+            position: absolute;
+        }
+    }
+  }
+
+  &__request {
+    margin-bottom: 5rem;
+    & .container {
+      text-align: center;
+      color: $dark-navy;
+
+      @include desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1600px;
+        margin: auto;
+        padding: 0 10rem;
+      }
+    }
+
+    
+
+    & h3 {
+      font-size: 2rem;
+      line-height: 2rem;
+      letter-spacing: -1.5px;
+      margin-bottom: 1.5rem;
+
+      @include tablet{
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -2px;
+        max-width: 457px;
+        margin: 0 auto 2rem;
+      }
+
+      @include desktop{
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    & p {
+      font-size: 0.9rem;
+      line-height: 25px;
+      margin-bottom: 1.5rem;
+
+      @include tablet{
+        max-width: 573px;
+        margin: 0 auto 2rem;
+      }
+
+      @include desktop{
+        text-align: left;
+        margin: 0;
+        max-width: 445px;
+      }
+    }
+  }
+}
+
+.zipfelbums{
+    @include tablet{
+        width: 16px;
+        height: 16px;
+        background-color: $yellow;
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: rotate(45deg) translate(-50%, 50%);
+        
+    }
+}
+
+.NY{
+    top: 40px;
+    left: 59px;
+
+    @include desktop{
+      top: 105px;
+      left: 156px;
+       }
+    }
+
+
+.JK{
+    top: 126px;
+    right: 58px;
+
+    @include desktop{
+      top: 254px;
+    right: 154px;
+    }
+}
+
+.LO{
+    top: 6px;
+    left: 204px;
+
+    @include desktop{
+      top: 48px;
+      left: 397px;
+    }
+}
+
+.YK{
+    top: 39px;
+    right: 13px;
+
+    @include desktop{
+      top: 108px;
+    right: 73px;
+    }
+}

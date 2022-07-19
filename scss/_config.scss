@@ -1,0 +1,66 @@
+@import 'responsive';
+
+$yellow: hsl(40°, 97%, 58%);
+$dark-navy: hsl(216°, 17%, 35%);
+$dim-grey: hsl(217°, 12%, 62%);
+$light-grey: hsl(212°, 41%, 93%);
+$snow: hsl(214°, 37%, 96%);
+$light-yellow: hsl(39°, 100%, 94%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    display: block;
+}
+
+h1, h2, h3{
+    font-family: 'Space Mono', monospace;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 1.5rem 3rem;
+    overflow-x: hidden;
+
+    @include tablet{
+        padding: 0 6.125rem;
+    }
+}
+
+.pattern{
+    position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.bottom-margin{
+    margin-bottom: 1.5rem;
+}

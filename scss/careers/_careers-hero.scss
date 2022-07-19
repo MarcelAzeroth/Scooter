@@ -1,0 +1,160 @@
+.careers__hero{
+    background-image: url('./assets/images/careers-location-hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+
+    & .container{
+        @include desktop{
+            padding: 0 10rem;
+            max-width: 1600px;
+            margin: auto;
+        }
+    }
+
+    @include tablet{
+        background-image: url('./assets/images/careers-locations-hero-tablet.jpg');
+        overflow-x: hidden;
+    }
+
+    @include desktop{
+        background-image: url('./assets/images/careers-locations-hero-desktop.jpg');
+    }
+
+    &__headline{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 3.75rem 0;
+
+        @include tablet{
+            text-align: left;
+        }
+    }
+}
+
+.hero__circles{
+    display: none;
+
+    @include tablet{
+        display: block;
+        top: 60px;
+        right: -30px;
+    }
+}
+
+.careers__info{
+    padding: 7.5rem 0;
+    color: $dark-navy;
+    position: relative;
+    overflow-x: hidden;
+
+    @include desktop{
+        max-width: 1600px;
+                margin: auto;
+    }
+    
+
+    & .container{
+        overflow: hidden;
+
+    
+            @include desktop{
+                padding: 0 10rem;
+                
+            }
+        
+    }
+
+    &__headline{
+        font-size: 2rem;
+        letter-spacing: -1.5px;
+        line-height: 2rem;
+
+        @include tablet{
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+
+    &__paragraph{
+        font-size: .98rem;
+        line-height: 25px;
+    }
+
+    & .container{
+        display: flex;
+        flex-direction: column;
+        gap: 7.5rem;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @include desktop{
+            flex-direction: row-reverse;
+        }
+        
+
+        &__picture{
+            margin-bottom: 3.5rem;
+
+            &__img{
+                height: 311px;
+                width: 311px;
+                border-radius: 50%;
+
+                @include tablet{
+                    height: 445px;
+                    width: 445px;
+                }
+            }
+        }
+    }
+
+    &__arrow{
+        top: 300px;
+        z-index: 10;
+
+        @include tablet{
+            top: 390px;
+            right: 0;
+        }
+    }
+
+    &__headline{
+        margin-bottom: 2rem;
+    }
+
+    & .button{
+        margin-top: 2.87rem;
+    }
+}
+
+.white-circle{
+    &__mission{
+        display: none;
+
+        @include tablet{
+            display: block;
+            right: -270px;
+            top: 120px;
+
+        }
+
+        @include desktop{
+            right: -368px;
+        }
+    }
+}
+
+.mission-wrapper{
+    @include desktop{
+        text-align: left;
+        max-width: 445px;
+        margin-right: auto;
+    }
+}

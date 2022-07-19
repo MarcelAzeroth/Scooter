@@ -1,0 +1,115 @@
+.hero{
+    position: relative;
+    color: white;
+    text-align: center;
+    background-image: url("./assets/images/home-hero-mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet{
+        background-image: url("./assets/images/home-hero-tablet.jpg");
+        padding-top: 8.5rem;
+        padding-bottom: 6rem;
+    }
+
+    @include desktop{
+        background-image: url("./assets/images/home-hero-desktop.jpg");
+        text-align: left;
+        position: static;
+        
+    }
+
+    & .container{
+        @include desktop{
+            max-width: 1600px;
+            margin: auto;
+            position: relative;
+        }
+    }
+
+    &__headline{
+        font-size: 2.5rem;
+        margin: 5.5rem 0 1.5rem;
+        letter-spacing: -1.5px;
+
+        @include tablet{
+            font-size: 3.5rem;
+            letter-spacing: -2.5px;
+            line-height: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @include desktop{
+            max-width: 525px;
+        }
+    }
+
+    &__paragraph{
+        font-weight: 400;
+        font-size: .9rem;
+        line-height: 25px;
+        margin-bottom: 2.125rem;
+
+        @include desktop{
+            max-width: 325px;;
+            margin-left: 5rem;
+        }
+    }
+
+    &__button{
+        margin-bottom: 11.25rem;
+        padding: .75rem 2.25rem;
+
+        @include desktop{
+            margin-left: 5rem;
+        }
+    }
+
+    &__arrow{
+        bottom: 40px;
+        left: -310px;
+
+        @include tablet{
+            bottom: 75px;
+            left: -138px;
+        }
+
+        @include desktop{
+            left: 516px;
+            bottom: 220px;
+        }
+    }
+
+    &__line{
+        display: none;
+
+        @include desktop{
+            display: block;
+            left: -40px;
+            bottom: 355px;
+        }
+    }
+
+    &__home__circles{
+        display: none;
+
+        @include tablet{
+            display: block;
+            bottom: 90px;
+            right: -30px;
+        }
+
+        @include desktop{
+            bottom: 238px;
+        }
+    }
+}
+
+.patter-wrapper{
+    @include desktop{
+        position: relative;
+        max-width: 1255px;
+        margin: auto;
+    }
+}

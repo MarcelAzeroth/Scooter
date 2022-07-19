@@ -1,0 +1,152 @@
+.about__info{
+    margin: 7.5rem 0;
+    color: $dark-navy;
+
+    &__headline{
+        font-size: 2rem;
+        letter-spacing: -1.5px;
+        line-height: 2rem;
+
+        @include tablet{
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+
+    &__paragraph{
+        font-size: .98rem;
+        line-height: 25px;
+
+        @include tablet{
+            width: 70%;
+            margin: auto;
+        }
+
+        @include desktop{
+            margin: 0;
+        }
+
+    }
+
+    & .container{
+        display: flex;
+        flex-direction: column;
+        gap: 7.5rem;
+
+        @include desktop{
+            max-width: 1600px;
+            margin: auto;
+            padding: 0 10rem;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        &__picture{
+            margin-bottom: 3.5rem;
+
+            &__img{
+                height: 311px;
+                width: 311px;
+                border-radius: 50%;
+
+                @include tablet{
+                    width: 445px;
+                    height: 445px;
+                }
+            }
+
+            @include desktop{
+                margin-left: auto;
+                margin-bottom: 0;
+            }
+        }
+
+        @include desktop{
+          
+            flex-direction: row-reverse;
+            
+
+        }
+    }
+
+    &__telemetry__arrow{
+        top: 130px;
+        z-index: 10;
+
+        @include tablet{
+            top: 265px;
+            right: -219px;
+        }
+    }
+
+    &__city__arrow{
+        bottom: 170px;
+        left: -150px;
+        z-index: 10;
+
+        @include tablet{
+            top: 0;
+            left: -130px;
+        }
+
+        @include desktop{
+            left: -166px;
+        }
+    }
+
+    &__headline{
+        margin-bottom: 2rem;
+    }
+}
+
+.white-circle{
+
+    &__mobility{
+        display: none;
+
+        @include tablet{
+            display: block;
+            top: 0;
+            right: -440px;
+            z-index: 1;
+        }
+
+        @include desktop{
+            right: -505px;
+        }
+    }
+
+    &__living{
+        display: none;
+
+        @include tablet{
+            display: block;
+            top: 0;
+            left: -440px;
+            z-index: 1;
+        }
+
+        @include desktop{
+            left: -485px;
+        }
+    }
+}
+
+.regular-row{
+    @include desktop{
+        flex-direction: row;
+    }
+}
+
+.regular-row-picture{
+    @include desktop{
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
